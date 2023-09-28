@@ -10,6 +10,19 @@
     "Programming Languages"
   ],
   "contributes": {
+    "languages": [
+      {
+        "id": "nue",
+        "aliases": [
+          "Nue",
+          "nue"
+        ],
+        "extensions": [
+          ".nue"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
     "grammars": [
       {
         "scopeName": "text.html.nue",
