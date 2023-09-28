@@ -1,6 +1,6 @@
 {
   "name": "nue",
-  "displayName": "Nue",
+  "displayName": "Nue Syntax Highlight",
   "description": "Syntax highlight for nue.js",
   "version": "0.0.1",
   "engines": {
