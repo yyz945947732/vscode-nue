@@ -1,0 +1,34 @@
+{
+  "name": "nue",
+  "displayName": "Nue",
+  "description": "Syntax highlight for nue.js",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "text.html.nue",
+        "path": "./syntaxes/vue.json",
+        "injectTo": [
+          "text.html"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.javascript": "source.js"
+        }
+      }
+    ],
+    "configurationDefaults": {
+      "files.associations": {
+        "*.nue": "html"
+      },
+      "emmet.includeLanguages": {
+        "nue": "html"
+      }
+    }
+  }
+}
