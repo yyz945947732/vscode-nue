@@ -13,7 +13,7 @@
     "grammars": [
       {
         "scopeName": "text.html.nue",
-        "path": "./syntaxes/vue.json",
+        "path": "./syntaxes/nue.tmLanguage.json",
         "injectTo": [
           "text.html"
         ],
