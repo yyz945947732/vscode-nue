@@ -18,7 +18,7 @@
           "name": "entity.name.tag.script.html"
         }
       },
-      "end": "\\s*(</)(script)(>)",
+      "end": "(</)(script)(>)",
       "endCaptures": {
         "1": {
           "name": "punctuation.definition.tag.begin.html"
@@ -43,6 +43,46 @@
           "patterns": [
             {
               "include": "source.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "begin": "(<)(style)(?![^/>]*/>\\s*$)",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.tag.begin.html"
+        },
+        "2": {
+          "name": "entity.name.tag.style.html"
+        }
+      },
+      "end": "\\s*(</)(style)(>)",
+      "endCaptures": {
+        "1": {
+          "name": "punctuation.definition.tag.begin.html"
+        },
+        "2": {
+          "name": "entity.name.tag.style.html"
+        },
+        "3": {
+          "name": "punctuation.definition.tag.end.html"
+        }
+      },
+      "patterns": [
+        {
+          "contentName": "source.css",
+          "begin": "(>)",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.definition.tag.end.html"
+            }
+          },
+          "end": "</style>",
+          "patterns": [
+            {
+              "include": "source.css"
             }
           ]
         }
