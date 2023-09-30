@@ -14,7 +14,8 @@
     "publish": "npx vsce publish --githubBranch master"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
   ],
   "keywords": [
     "nue",
