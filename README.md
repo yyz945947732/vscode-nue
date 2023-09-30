@@ -9,6 +9,13 @@
 - [Snippets](#snippets)
 - [Auto-completion](#auto-completion)
 
+## Install
+
+You can install the extension by one of the following ways:
+
+- Search for `Nue Language Support` in extension panel and install it
+- Download from [Marketplace](https://marketplace.visualstudio.com/items?itemName=yaoyuanzhang.nue)
+
 ## Syntax Highlighting
 
 ![ScreenShot](./asset/nue-highlight.png)
