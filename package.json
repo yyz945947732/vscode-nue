@@ -61,6 +61,11 @@
       },
       "html.validate.scripts": false,
       "html.validate.styles": false
+    },
+    "html": {
+      "customData": [
+        "./data/nue.json"
+      ]
     }
   },
   "repository": {
