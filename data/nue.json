@@ -1,95 +1,95 @@
 {
-  "version": 1.1,
-  "globalAttributes": [
-    {
-      "name": ":if",
-      "description": "Use the `:if` attribute to conditionally render a block. The block will only be rendered if the given expression returns a truthy value.",
-      "references": [
-        {
-          "name": "Nue Conditional directives",
-          "url": "https://nuejs.org/docs/nuejs/control-flow.html#conditional-directives"
-        }
-      ]
-    },
-    {
-      "name": ":else",
-      "description": "Use `:else` to indicate an “else block” for `:if`.",
-      "references": [
-        {
-          "name": "Nue Conditional directives",
-          "url": "https://nuejs.org/docs/nuejs/control-flow.html#else"
-        }
-      ]
-    },
-    {
-      "name": ":else-if",
-      "description": "The `:else-if` serves as an “else if block” for `:if`. It can be chained multiple times:",
-      "references": [
-        {
-          "name": "Nue Conditional directives",
-          "url": "https://nuejs.org/docs/nuejs/control-flow.html#else-if"
-        }
-      ]
-    },
-    {
-      "name": ":for",
-      "description": "Nue uses `:for` attribute to render over arrays, objects, and components. Nue has a somewhat simpler syntax for loops than Vue. For example, you don’t need to maintain a loop state with a special “key” variable.",
-      "references": [
-        {
-          "name": "Nue Loops",
-          "url": "https://nuejs.org/docs/nuejs/control-flow.html#loops"
-        }
-      ]
-    },
-    {
-      "name": ":bind",
-      "description": "The bind attribute makes the item properties accessible directly on the component. So instead of `{ item.title }` you can write `{ title }` inside the component.",
-      "references": [
-        {
-          "name": "Nue Loops",
-          "url": "https://nuejs.org/docs/nuejs/control-flow.html#component-loops"
-        }
-      ]
-    },
-    {
-      "name": ":html",
-      "description": "To output HTML",
-      "references": [
-        {
-          "name": "Nue HTML expressions",
-          "url": "https://nuejs.org/docs/nuejs/template-syntax.html#html-expressions"
-        }
-      ]
-    },
-    {
-      "name": ":class",
-      "description": "Nue supports a special object notation to help render the class attribute",
-      "references": [
-        {
-          "name": "Nue Class attribute",
-          "url": "https://nuejs.org/docs/nuejs/template-syntax.html#class"
-        }
-      ]
-    },
-    {
-      "name": ":attr",
-      "description": "Attr directive renders a DOM attribute for each property in an object.",
-      "references": [
-        {
-          "name": "Nue Attributes",
-          "url": "https://nuejs.org/docs/nuejs/template-syntax.html#attr"
-        }
-      ]
-    },
-    {
-      "name": "ref",
-      "description": "name a DOM node with `ref` attribute",
-      "references": [
-        {
-          "name": "Nue Ref",
-          "url": "https://nuejs.org/docs/nuejs/reactive-components.html#refs"
-        }
-      ]
-    }
-  ]
+	"version": 1.1,
+	"globalAttributes": [
+		{
+			"name": ":if",
+			"description": "Use the `:if` attribute to conditionally render a block. The block will only be rendered if the given expression returns a truthy value.",
+			"references": [
+				{
+					"name": "Nue Conditional directives",
+					"url": "https://nuejs.org/docs/nuejs/control-flow.html#conditional-directives"
+				}
+			]
+		},
+		{
+			"name": ":else",
+			"description": "Use `:else` to indicate an “else block” for `:if`.",
+			"references": [
+				{
+					"name": "Nue Conditional directives",
+					"url": "https://nuejs.org/docs/nuejs/control-flow.html#else"
+				}
+			]
+		},
+		{
+			"name": ":else-if",
+			"description": "The `:else-if` serves as an “else if block” for `:if`. It can be chained multiple times:",
+			"references": [
+				{
+					"name": "Nue Conditional directives",
+					"url": "https://nuejs.org/docs/nuejs/control-flow.html#else-if"
+				}
+			]
+		},
+		{
+			"name": ":for",
+			"description": "Nue uses `:for` attribute to render over arrays, objects, and components. Nue has a somewhat simpler syntax for loops than Vue. For example, you don’t need to maintain a loop state with a special “key” variable.",
+			"references": [
+				{
+					"name": "Nue Loops",
+					"url": "https://nuejs.org/docs/nuejs/control-flow.html#loops"
+				}
+			]
+		},
+		{
+			"name": ":bind",
+			"description": "The bind attribute makes the item properties accessible directly on the component. So instead of `{ item.title }` you can write `{ title }` inside the component.",
+			"references": [
+				{
+					"name": "Nue Loops",
+					"url": "https://nuejs.org/docs/nuejs/control-flow.html#component-loops"
+				}
+			]
+		},
+		{
+			"name": ":html",
+			"description": "To output HTML",
+			"references": [
+				{
+					"name": "Nue HTML expressions",
+					"url": "https://nuejs.org/docs/nuejs/template-syntax.html#html-expressions"
+				}
+			]
+		},
+		{
+			"name": ":class",
+			"description": "Nue supports a special object notation to help render the class attribute",
+			"references": [
+				{
+					"name": "Nue Class attribute",
+					"url": "https://nuejs.org/docs/nuejs/template-syntax.html#class"
+				}
+			]
+		},
+		{
+			"name": ":attr",
+			"description": "Attr directive renders a DOM attribute for each property in an object.",
+			"references": [
+				{
+					"name": "Nue Attributes",
+					"url": "https://nuejs.org/docs/nuejs/template-syntax.html#attr"
+				}
+			]
+		},
+		{
+			"name": "ref",
+			"description": "name a DOM node with `ref` attribute",
+			"references": [
+				{
+					"name": "Nue Ref",
+					"url": "https://nuejs.org/docs/nuejs/reactive-components.html#refs"
+				}
+			]
+		}
+	]
 }

@@ -1,140 +1,140 @@
 {
-  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "Nue",
-  "scopeName": "text.html.nue",
-  "injectionSelector": "L:text.html",
-  "uuid": "5512c10d-4cc5-434c-b8fc-53b912f55ab3",
-  "patterns": [
-    {
-      "include": "#nue-directives"
-    },
-    {
-      "include": "#nue-tag"
-    },
-    {
-      "include": "#nue-other"
-    }
-  ],
-  "repository": {
-    "nue-directives": {
-      "name": "meta.directive.nue",
-      "begin": "(?:(:|@))([a-zA-Z0-9\\-_]+)(?:\\:([a-zA-Z\\-_]+))?(?:\\.([a-zA-Z\\-_]+))*\\s*(=)",
-      "end": "(?<='|\")|(?=[\\s<>`])",
-      "captures": {
-        "1": {
-          "name": "entity.other.attribute-name.html"
-        },
-        "2": {
-          "name": "punctuation.separator.key-value.html"
-        },
-        "3": {
-          "name": "entity.other.attribute-name.html"
-        },
-        "4": {
-          "name": "entity.other.attribute-name.html"
-        },
-        "5": {
-          "name": "entity.other.attribute-name.html"
-        },
-        "6": {
-          "name": "punctuation.separator.key-value.html"
-        }
-      },
-      "patterns": [
-        {
-          "name": "source.directive.nue",
-          "begin": "`",
-          "beginCaptures": {
-            "0": {
-              "name": "punctuation.definition.string.begin.html"
-            }
-          },
-          "end": "`",
-          "endCaptures": {
-            "0": {
-              "name": "punctuation.definition.string.end.html"
-            }
-          },
-          "patterns": [
-            {
-              "include": "source.js#expression"
-            }
-          ]
-        },
-        {
-          "name": "source.directive.nue",
-          "begin": "\"",
-          "beginCaptures": {
-            "0": {
-              "name": "punctuation.definition.string.begin.html"
-            }
-          },
-          "end": "\"",
-          "endCaptures": {
-            "0": {
-              "name": "punctuation.definition.string.end.html"
-            }
-          },
-          "patterns": [
-            {
-              "include": "source.js#expression"
-            }
-          ]
-        },
-        {
-          "name": "source.directive.nue",
-          "begin": "'",
-          "beginCaptures": {
-            "0": {
-              "name": "punctuation.definition.string.begin.html"
-            }
-          },
-          "end": "'",
-          "endCaptures": {
-            "0": {
-              "name": "punctuation.definition.string.end.html"
-            }
-          },
-          "patterns": [
-            {
-              "include": "source.js#expression"
-            }
-          ]
-        }
-      ]
-    },
-    "nue-tag": {
-      "begin": "\\{\\{?",
-      "beginCaptures": {
-        "1": {
-          "name": "punctuation.definition.tag.begin.nue"
-        }
-      },
-      "end": "\\}\\}?",
-      "endCaptures": {
-        "1": {
-          "name": "punctuation.definition.tag.begin.nue"
-        }
-      },
-      "contentName": "source.js",
-      "name": "nue-html",
-      "patterns": [
-        {
-          "include": "source.js#expression"
-        }
-      ]
-    },
-    "nue-other": {
-      "name": "meta.other.nue",
-      "match": "(:)(else)",
-      "captures": {
-        "1": {
-          "name": "entity.other.attribute-name.html"
-        },
-        "2": {
-          "name": "punctuation.separator.key-value.html"
-        }
-      }
-    }
-  }
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Nue",
+	"scopeName": "text.html.nue",
+	"injectionSelector": "L:text.html",
+	"uuid": "5512c10d-4cc5-434c-b8fc-53b912f55ab3",
+	"patterns": [
+		{
+			"include": "#nue-directives"
+		},
+		{
+			"include": "#nue-tag"
+		},
+		{
+			"include": "#nue-other"
+		}
+	],
+	"repository": {
+		"nue-directives": {
+			"name": "meta.directive.nue",
+			"begin": "(?:(:|@))([a-zA-Z0-9\\-_]+)(?:\\:([a-zA-Z\\-_]+))?(?:\\.([a-zA-Z\\-_]+))*\\s*(=)",
+			"end": "(?<='|\")|(?=[\\s<>`])",
+			"captures": {
+				"1": {
+					"name": "entity.other.attribute-name.html"
+				},
+				"2": {
+					"name": "punctuation.separator.key-value.html"
+				},
+				"3": {
+					"name": "entity.other.attribute-name.html"
+				},
+				"4": {
+					"name": "entity.other.attribute-name.html"
+				},
+				"5": {
+					"name": "entity.other.attribute-name.html"
+				},
+				"6": {
+					"name": "punctuation.separator.key-value.html"
+				}
+			},
+			"patterns": [
+				{
+					"name": "source.directive.nue",
+					"begin": "`",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.html"
+						}
+					},
+					"end": "`",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.html"
+						}
+					},
+					"patterns": [
+						{
+							"include": "source.js#expression"
+						}
+					]
+				},
+				{
+					"name": "source.directive.nue",
+					"begin": "\"",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.html"
+						}
+					},
+					"end": "\"",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.html"
+						}
+					},
+					"patterns": [
+						{
+							"include": "source.js#expression"
+						}
+					]
+				},
+				{
+					"name": "source.directive.nue",
+					"begin": "'",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.html"
+						}
+					},
+					"end": "'",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.html"
+						}
+					},
+					"patterns": [
+						{
+							"include": "source.js#expression"
+						}
+					]
+				}
+			]
+		},
+		"nue-tag": {
+			"begin": "\\{\\{?",
+			"beginCaptures": {
+				"1": {
+					"name": "punctuation.definition.tag.begin.nue"
+				}
+			},
+			"end": "\\}\\}?",
+			"endCaptures": {
+				"1": {
+					"name": "punctuation.definition.tag.begin.nue"
+				}
+			},
+			"contentName": "source.js",
+			"name": "nue-html",
+			"patterns": [
+				{
+					"include": "source.js#expression"
+				}
+			]
+		},
+		"nue-other": {
+			"name": "meta.other.nue",
+			"match": "(:)(else)",
+			"captures": {
+				"1": {
+					"name": "entity.other.attribute-name.html"
+				},
+				"2": {
+					"name": "punctuation.separator.key-value.html"
+				}
+			}
+		}
+	}
 }
