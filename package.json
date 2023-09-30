@@ -16,10 +16,7 @@
         "path": "./syntaxes/nue.tmLanguage.json",
         "injectTo": [
           "text.html"
-        ],
-        "embeddedLanguages": {
-          "meta.embedded.block.javascript": "source.js"
-        }
+        ]
       }
     ],
     "configurationDefaults": {
@@ -28,7 +25,9 @@
       },
       "emmet.includeLanguages": {
         "nue": "html"
-      }
+      },
+      "html.validate.scripts": false,
+      "html.validate.styles": false
     }
   }
 }
