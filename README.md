@@ -9,19 +9,19 @@
 - [Snippets](#snippets)
 - [Auto-completion](#auto-completion)
 
-### Syntax Highlighting
+## Syntax Highlighting
 
 ![ScreenShot](./asset/nue-highlight.png)
 
-### Snippets
+## Snippets
 
-#### `nfor`
+### `nfor`
 
 ```js
 :for="(item, index) in array"
 ```
 
-#### `nif`
+### `nif`
 
 ```html
 <div :if="condition"></div>
@@ -29,7 +29,7 @@
 <div :else="condition"></div>
 ```
 
-#### `nscript`
+### `nscript`
 
 ```html
 <script>
@@ -48,7 +48,7 @@
 </script>
 ```
 
-#### `nattr`
+### `nattr`
 
 ```html
 <div :attr="data">
@@ -60,7 +60,7 @@
 </div>
 ```
 
-### Auto Completion
+## Auto Completion
 
 ![ScreenShot](./asset/nue-auto-complete.png)
 
