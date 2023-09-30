@@ -92,9 +92,7 @@ If you need documention on how to use Nue JS:
   However, the actual error message inside script tag cannot be detected either. if you still want to detect script error. you can add the following to your settings file.
 
   ```json
-  "html.validate.scripts": {
-    "html.validate.scripts": true,
-  },
+  "html.validate.scripts": true
   ```
 
 ## Credits
