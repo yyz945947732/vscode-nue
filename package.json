@@ -1,7 +1,7 @@
 {
   "name": "nue",
-  "displayName": "Nue language support",
-  "description": "Nue language support for Visual Studio Code.",
+  "displayName": "Nue Language Support",
+  "description": "Nue Language Support for Visual Studio Code.",
   "version": "0.0.1",
   "license": "MIT",
   "publisher": "yaoyuanzhang",

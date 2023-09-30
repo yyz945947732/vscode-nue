@@ -1,65 +1,101 @@
-# Nue Syntax Highlight
+[![Visual&nbsp;Studio Marketplace](https://img.shields.io/visual-studio-marketplace/v/yaoyuanzhang.nue)](https://marketplace.visualstudio.com/items?itemName=yaoyuanzhang.nue)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yyz945947732/vscode-nue/blob/master/README.md)
 
-This is the README for your extension "nue". After writing up a brief description, we recommend including the following sections.
+# Nue Language Support
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- [Syntax-highlighting](#syntax-highlighting)
+- [Snippets](#snippets)
+- [Auto-completion](#auto-completion)
 
-For example if there is an image subfolder under your extension project workspace:
+### Syntax Highlighting
 
-\!\[feature X\]\(images/feature-x.png\)
+![ScreenShot](./asset/nue-highlight.png)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Snippets
 
-## Requirements
+#### `nfor`
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+```js
+:for="(item, index) in array"
+```
 
-## Extension Settings
+#### `nif`
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+```html
+<div :if="condition"></div>
+<div :else-if="condition"></div>
+<div :else="condition"></div>
+```
 
-For example:
+#### `nscript`
 
-This extension contributes the following settings:
+```html
+<script>
+  constructor(data) {
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+  }
+  mounted() {
 
-## Known Issues
+  }
+  updated() {
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+  }
+  unmounted() {
 
-## Release Notes
+  }
+</script>
+```
 
-Users appreciate release notes as you update your extension.
+#### `nattr`
 
-### 1.0.0
+```html
+<div :attr="data">
+  <script>
+    data = {
 
-Initial release of ...
+    }
+  </script>
+</div>
+```
 
-### 1.0.1
+### Auto Completion
 
-Fixed issue #.
+![ScreenShot](./asset/nue-auto-complete.png)
 
-### 1.1.0
+![ScreenShot](./asset/nue-auto-complete-tip.png)
 
-Added features X, Y, and Z.
+## Nue docs
 
----
+If you need documention on how to use Nue JS:
 
-## Working with Markdown
+[Nue Github](https://github.com/nuejs/nuejs)
+[Nue Website](https://nuejs.org)
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+## Notice
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+- If you are not seeing any style, set your file associations for "*.nue" to html.
+- This extension will affect all html type files, just like [EJS Language Support](https://github.com/Digitalbrainstem/ejs-grammar). So both `.nue` file and `.html` file will affect by this extension.
+- This extension disables the `html.validate.scripts` setting by default so that the following script will not report syntax errors.
 
-## For more information
+  ![ScreenShot](./asset/nue-lint.png)
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+  However, the actual error message inside script tag cannot be detected either. if you still want to detect script error. you can add the following to your settings file.
 
-**Enjoy!**
+  ```json
+  "html.validate.scripts": {
+    "html.validate.scripts": true,
+  },
+  ```
+
+## Credits
+
+The following projects have given me a lot of inspiration:
+
+- [vetur](https://github.com/vuejs/vetur)
+- [EJS Language Support](https://github.com/Digitalbrainstem/ejs-grammar)
+
+## License
+
+[MIT](https://github.com/yyz945947732/vscode-nue/blob/master/LICENSE)
