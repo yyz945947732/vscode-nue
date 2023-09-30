@@ -1,15 +1,41 @@
 {
   "name": "nue",
-  "displayName": "Nue Syntax Highlight",
-  "description": "Syntax highlight for nue.js",
+  "displayName": "Nue language support",
+  "description": "Nue language support for Visual Studio Code.",
   "version": "0.0.1",
+  "license": "MIT",
+  "publisher": "yaoyuanzhang",
+  "icon": "asset/logo.png",
   "engines": {
-    "vscode": "^1.82.0"
+    "vscode": "^1.52.0"
+  },
+  "author": "yyz945947732 <945947732@qq.com>",
+  "scripts": {
+    "publish": "npx vsce publish --githubBranch master"
   },
   "categories": [
     "Programming Languages"
   ],
+  "keywords": [
+    "nue",
+    "nuejs",
+    "snippets",
+    "syntax highlighting"
+  ],
   "contributes": {
+    "languages": [
+      {
+        "id": "nue",
+        "aliases": [
+          "Nue",
+          "nue"
+        ],
+        "extensions": [
+          ".nue"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
     "grammars": [
       {
         "scopeName": "text.html.nue",
@@ -29,5 +55,13 @@
       "html.validate.scripts": false,
       "html.validate.styles": false
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yyz945947732/vscode-nue"
+  },
+  "bugs": {
+    "url": "https://github.com/yyz945947732/vscode-nue/issues",
+    "email": "945947732@qq.com"
   }
 }
