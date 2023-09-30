@@ -45,6 +45,12 @@
         ]
       }
     ],
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/snippets.json"
+      }
+    ],
     "configurationDefaults": {
       "files.associations": {
         "*.nue": "html"

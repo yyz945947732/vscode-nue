@@ -1,0 +1,49 @@
+{
+  "Nue For Loop": {
+    "prefix": "nfor",
+    "body": [":for=\"(${2:item}, ${3:index}) in ${1:array}\""],
+    "description": "Nue For Loop"
+  },
+  "Nue If Statement": {
+    "prefix": "nif",
+    "body": [
+      "<${1:div} :if=\"${2:condition}\"></${1:div}>",
+      "<${1:div} :else-if=\"${2:condition}\"></${1:div}>",
+      "<${1:div} :else=\"${2:condition}\"></${1:div}>"
+    ],
+    "description": "Nue If Statement"
+  },
+  "Nue Script": {
+    "prefix": "nscript",
+    "body": [
+      "<script>",
+      "  constructor(data) {",
+      "",
+      "  }",
+      "  mounted() {",
+      "",
+      "  }",
+      "  updated() {",
+      "",
+      "  }",
+      "  unmounted() {",
+      "",
+      "  }",
+      "</script>"
+    ],
+    "description": "Nue Script with all lifecycle methods"
+  },
+  "Nue Attr": {
+    "prefix": "nattr",
+    "body": [
+      "<${1:div} :attr=\"${2:data}\">",
+      "  <script>",
+      "    ${2:data} = {",
+      "",
+      "    }",
+      "  </script>",
+      "</${1:div}>"
+    ],
+    "description": "Rendering attributes with :attr"
+  }
+}
