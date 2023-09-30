@@ -78,6 +78,7 @@ You can install the extension by one of the following ways:
 If you need documention on how to use Nue JS:
 
 [Nue Github](https://github.com/nuejs/nuejs)
+
 [Nue Website](https://nuejs.org)
 
 ## Notice
