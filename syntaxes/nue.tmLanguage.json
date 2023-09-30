@@ -10,6 +10,9 @@
     },
     {
       "include": "#nue-directives"
+    },
+    {
+      "include": "#nue-other"
     }
   ],
   "repository": {
@@ -120,6 +123,18 @@
           "include": "source.js#expression"
         }
       ]
+    },
+    "nue-other": {
+      "name": "meta.other.nue",
+      "match": "(:)(else)",
+      "captures": {
+        "1": {
+          "name": "entity.other.attribute-name.html"
+        },
+        "2": {
+          "name": "punctuation.separator.key-value.html"
+        }
+      }
     }
   }
 }
