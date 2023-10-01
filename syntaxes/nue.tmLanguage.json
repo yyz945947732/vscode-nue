@@ -120,6 +120,9 @@
 			"name": "nue-html",
 			"patterns": [
 				{
+					"include": "#nue-js-keyword"
+				},
+				{
 					"include": "source.js#expression"
 				}
 			]
@@ -135,6 +138,15 @@
 					"name": "punctuation.separator.key-value.html"
 				}
 			}
+		},
+		"nue-js-keyword": {
+			"name": "meta.keyword",
+			"match": "(function|class)",
+			"patterns": [
+				{
+					"include": "text.html"
+				}
+			]
 		}
 	}
 }
