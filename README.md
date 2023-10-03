@@ -33,7 +33,7 @@ You can install the extension by one of the following ways:
 ```html
 <div :if="condition"></div>
 <div :else-if="condition"></div>
-<div :else="condition"></div>
+<div :else></div>
 ```
 
 ### `nscript`
