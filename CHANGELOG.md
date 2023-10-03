@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.0.4
+
+- Add event-related autocompletion.
+- Add `@name` attributes autocompletion.
+- Remove useless content from the `:else` template in `nif` snippets.
+
 ## 0.0.3
 
 - Fixed an issue that `function {` or `class {` in `{}`would cause a highlight error
