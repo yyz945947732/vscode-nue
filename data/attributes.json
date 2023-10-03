@@ -23,7 +23,7 @@
 		},
 		{
 			"name": ":else-if",
-			"description": "The `:else-if` serves as an “else if block” for `:if`. It can be chained multiple times:",
+			"description": "The `:else-if` serves as an “else if block” for `:if`. It can be chained multiple times.",
 			"references": [
 				{
 					"name": "Nue Conditional directives",
@@ -63,7 +63,7 @@
 		},
 		{
 			"name": ":class",
-			"description": "Nue supports a special object notation to help render the class attribute",
+			"description": "Nue supports a special object notation to help render the class attribute.",
 			"references": [
 				{
 					"name": "Nue Class attribute",
@@ -83,11 +83,21 @@
 		},
 		{
 			"name": "ref",
-			"description": "name a DOM node with `ref` attribute",
+			"description": "name a DOM node with `ref` attribute.",
 			"references": [
 				{
 					"name": "Nue Ref",
 					"url": "https://nuejs.org/docs/nuejs/reactive-components.html#refs"
+				}
+			]
+		},
+		{
+			"name": "@name",
+			"description": "Components are HTML fragments with the component name given in the `@name` attribute.",
+			"references": [
+				{
+					"name": "Nue Components Name",
+					"url": "https://nuejs.org/docs/nuejs/component-basics.html#defining-components"
 				}
 			]
 		}

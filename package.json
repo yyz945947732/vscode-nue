@@ -64,7 +64,8 @@
 		},
 		"html": {
 			"customData": [
-				"./data/nue.json"
+				"./data/attributes.json",
+				"./data/event.json"
 			]
 		}
 	},
