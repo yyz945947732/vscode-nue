@@ -1,5 +1,18 @@
 # Change Log
 
+## 0.0.5
+
+----
+
+### ⚠️  Breaking change: ⚠️
+
+Now, this extension only supports `.nue` files. Other types of files will no longer be affected.
+
+----
+
+- Add icon for `.nue` file.
+- Improve attribute highlighting.
+
 ## 0.0.4
 
 - Add event-related autocompletion.
