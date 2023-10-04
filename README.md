@@ -6,9 +6,9 @@
 
 ## Features
 
-- [Syntax-highlighting](https://github.com/yyz945947732/vscode-nue/blob/docs/Syntax.md)
-- [Snippets](https://github.com/yyz945947732/vscode-nue/blob/docs/Snippets.md)
-- [Auto-Completion](https://github.com/yyz945947732/vscode-nue/blob/docs/Completion.md)
+- [Syntax-highlighting](https://github.com/yyz945947732/vscode-nue/blob/master/docs/Completion.md)
+- [Snippets](https://github.com/yyz945947732/vscode-nue/blob/master/docs/Snippets.md)
+- [Auto-Completion](https://github.com/yyz945947732/vscode-nue/blob/master/docs/Syntax.md)
 
 ## Install
 
