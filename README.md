@@ -1,7 +1,7 @@
 [![Visual&nbsp;Studio Marketplace](https://img.shields.io/visual-studio-marketplace/v/yaoyuanzhang.nue)](https://marketplace.visualstudio.com/items?itemName=yaoyuanzhang.nue)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yyz945947732/vscode-nue/blob/master/README.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/yyz945947732/vscode-nue/pulls)
-![Nuejs VSCode Extension](https://img.shields.io/badge/VScode%20Extension-NueJS-cadetblue)
+[![Nuejs VSCode Extension](https://img.shields.io/badge/VScode%20Extension-NueJS-cadetblue)](https://nuejs.org)
 
 # Nue Language Support
 
