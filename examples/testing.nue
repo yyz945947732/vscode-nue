@@ -1,0 +1,38 @@
+<!-- Value is escaped: Hello, <b>World!</b> -->
+<p>{ value }</p>
+
+<!-- Value is rendered as HTML: Hello, <b>World!</b> -->
+<p>{{ value }}</p>
+
+<!-- Same as the above (Vue compatibility) -->
+<p :html="value" />
+
+<button @click="count++">Increment</button>
+
+<b :if="type == 'A'">A</b>
+
+<b :else-if="type == 'B'">B</b>
+
+<b :else-if="type == 'C'">C </b>
+
+<b :else>Not A/B/C</b>
+
+<ul>
+    <li :for="item in items">
+        { item.lang } = { item.text }
+    </li>
+
+    <script>
+        items = [
+            { lang: 'en', text: 'Hello' },
+            { lang: 'es', text: 'Hola' },
+            { lang: 'it', text: 'Ciao' },
+            { lang: 'fi', text: 'Moi' }
+        ]
+    </script>
+</ul>
+
+
+<div :if="{ class }">
+
+</div>

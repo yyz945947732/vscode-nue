@@ -2,10 +2,11 @@
 	"name": "nue",
 	"displayName": "Nue Language Support",
 	"description": "Nue Language Support for Visual Studio Code.",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"license": "MIT",
 	"publisher": "yaoyuanzhang",
 	"icon": "asset/logo.png",
+	"main": "./src/extension.js",
 	"engines": {
 		"vscode": "^1.70.1"
 	},
@@ -22,6 +23,9 @@
 		"nuejs",
 		"snippets",
 		"syntax highlighting"
+	],
+	"activationEvents": [
+		"onLanguage:nue"
 	],
 	"contributes": {
 		"languages": [
@@ -71,7 +75,12 @@
 			"emmet.includeLanguages": {
 				"nue": "html"
 			}
-		}
+		},
+		"breakpoints": [
+			{
+				"language": "nue"
+			}
+		]
 	},
 	"repository": {
 		"type": "git",
