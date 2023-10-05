@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.6
+
+- Fixed an issue where HTML-related support did not start automatically. see <https://github.com/microsoft/vscode/issues/160585>.
+
 ## 0.0.5
 
 ----
@@ -21,12 +25,12 @@ Now, this extension only supports `.nue` files. Other types of files will no lon
 
 ## 0.0.3
 
-- Fixed an issue that `function {` or `class {` in `{}`would cause a highlight error
+- Fixed an issue that `function {` or `class {` in `{}`would cause a highlight error.
 
 ## 0.0.2
 
-- Fix Document Error
+- Fix Document Error.
 
 ## 0.0.1
 
-- Initial Release
+- Initial Release.
