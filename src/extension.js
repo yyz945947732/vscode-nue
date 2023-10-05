@@ -8,7 +8,7 @@ async function activate() {
 	);
 
 	if (!htmlExtension) {
-		const output = vscode.window.createOutputChannel("Jinja");
+		const output = vscode.window.createOutputChannel("nue");
 
 		output.appendLine(
 			"Warning: Could not find vscode.html-language-features. HTML Language Participants support will be disabled."
