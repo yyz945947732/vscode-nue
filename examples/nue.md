@@ -1,4 +1,4 @@
-# Nue In MarkDown
+# Nue In Markdown
 
 ```nue
 <b :if="type == 'A'">A</b>
