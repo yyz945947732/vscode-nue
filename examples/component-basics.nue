@@ -1,0 +1,63 @@
+<!-- Defining components -->
+<div @name="media-object" class="{ class }">
+    <img src="{ img }">
+    <aside>
+        <h3>{ title }</h3>
+        <p>{ desc }</p>
+    </aside>
+</div>
+
+<!-- Nesting components -->
+<main @name="my-app">
+    <app-header />
+    <app-body />
+    <app-footer />
+</main>
+
+<main @name="my-app">
+    <app-header model={ model } />
+</main>
+
+<!-- Instance methods and variables -->
+<div @name="media-object" class="{ type }">
+    <img src="{ img }">
+    <aside>
+        <h3>{ title }</h3>
+        <p>{ format(desc) }</p>
+    </aside>
+
+    <!-- instance variables and methods -->
+    <script>
+
+        // instance variable
+        title = 'Default title'
+
+        // called when the component is created
+        constructor(data) {
+        }
+
+        // custom function called by the template
+        format(value) {
+        }
+    </script>
+</div>
+
+<!-- Slots -->
+<div class="{ type }">
+    <img src="{ img }">
+    <aside>
+        <h3>{ title }</h3>
+        <p>{ desc }</p>
+        <slot />
+    </aside>
+</div>
+
+<media-object :for="item in items" :bind="item">
+    <h4>{ item.price }</h4>
+    <button>Add to cart</button>
+</media-object>
+
+<!-- Component libraries -->
+<ul @name="todo-list"></ul>
+
+<li @name="todo-item"></li>

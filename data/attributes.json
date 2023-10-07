@@ -93,7 +93,7 @@
 		},
 		{
 			"name": "@name",
-			"description": "Components are HTML fragments with the component name given in the `@name` attribute.",
+			"description": "Component Name.",
 			"references": [
 				{
 					"name": "Nue Components Name",
