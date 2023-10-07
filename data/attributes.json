@@ -6,7 +6,7 @@
 			"description": "Use the `:if` attribute to conditionally render a block. The block will only be rendered if the given expression returns a truthy value.",
 			"references": [
 				{
-					"name": "Nue Conditional directives",
+					"name": "API Reference",
 					"url": "https://nuejs.org/docs/nuejs/control-flow.html#conditional-directives"
 				}
 			]
@@ -16,7 +16,7 @@
 			"description": "Use `:else` to indicate an “else block” for `:if`.",
 			"references": [
 				{
-					"name": "Nue Conditional directives",
+					"name": "API Reference",
 					"url": "https://nuejs.org/docs/nuejs/control-flow.html#else"
 				}
 			]
@@ -26,7 +26,7 @@
 			"description": "The `:else-if` serves as an “else if block” for `:if`. It can be chained multiple times.",
 			"references": [
 				{
-					"name": "Nue Conditional directives",
+					"name": "API Reference",
 					"url": "https://nuejs.org/docs/nuejs/control-flow.html#else-if"
 				}
 			]
@@ -36,7 +36,7 @@
 			"description": "Nue uses `:for` attribute to render over arrays, objects, and components. Nue has a somewhat simpler syntax for loops than Vue. For example, you don’t need to maintain a loop state with a special “key” variable.",
 			"references": [
 				{
-					"name": "Nue Loops",
+					"name": "API Reference",
 					"url": "https://nuejs.org/docs/nuejs/control-flow.html#loops"
 				}
 			]
@@ -46,7 +46,7 @@
 			"description": "The bind attribute makes the item properties accessible directly on the component. So instead of `{ item.title }` you can write `{ title }` inside the component.",
 			"references": [
 				{
-					"name": "Nue Loops",
+					"name": "API Reference",
 					"url": "https://nuejs.org/docs/nuejs/control-flow.html#component-loops"
 				}
 			]
@@ -56,7 +56,7 @@
 			"description": "To output HTML",
 			"references": [
 				{
-					"name": "Nue HTML expressions",
+					"name": "API Reference",
 					"url": "https://nuejs.org/docs/nuejs/template-syntax.html#html-expressions"
 				}
 			]
@@ -66,7 +66,7 @@
 			"description": "Nue supports a special object notation to help render the class attribute.",
 			"references": [
 				{
-					"name": "Nue Class attribute",
+					"name": "API Reference",
 					"url": "https://nuejs.org/docs/nuejs/template-syntax.html#class"
 				}
 			]
@@ -76,7 +76,7 @@
 			"description": "Attr directive renders a DOM attribute for each property in an object.",
 			"references": [
 				{
-					"name": "Nue Attributes",
+					"name": "API Reference",
 					"url": "https://nuejs.org/docs/nuejs/template-syntax.html#attr"
 				}
 			]
@@ -86,7 +86,7 @@
 			"description": "name a DOM node with `ref` attribute.",
 			"references": [
 				{
-					"name": "Nue Ref",
+					"name": "API Reference",
 					"url": "https://nuejs.org/docs/nuejs/reactive-components.html#refs"
 				}
 			]
@@ -96,7 +96,7 @@
 			"description": "Component Name.",
 			"references": [
 				{
-					"name": "Nue Components Name",
+					"name": "API Reference",
 					"url": "https://nuejs.org/docs/nuejs/component-basics.html#defining-components"
 				}
 			]
