@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.7
+
+- Add markdown support.
+
 ## 0.0.6
 
 - Fixed an issue where HTML-related support did not start automatically. see <https://github.com/microsoft/vscode/issues/160585>.
