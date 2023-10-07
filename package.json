@@ -51,6 +51,16 @@
 				"language": "nue",
 				"scopeName": "text.html.nue",
 				"path": "./syntaxes/nue.tmLanguage.json"
+			},
+			{
+				"scopeName": "markdown.nue.codeblock",
+				"path": "./syntaxes/markdown.nue.json",
+				"injectTo": [
+					"text.html.markdown"
+				],
+				"embeddedLanguages": {
+					"meta.embedded.block.nue": "nue"
+				}
 			}
 		],
 		"snippets": [
