@@ -15,7 +15,8 @@
 		"publish": "npx vsce publish --githubBranch master",
 		"format": "prettier --write '**/*.{js,json,md}'",
 		"lint": "prettier --check '**/*.{js,json,md}'",
-		"lint:doc": "markdownlint \"**/*.md\""
+		"lint:doc": "markdownlint \"**/*.md\"",
+		"prepare": "husky install"
 	},
 	"categories": [
 		"Programming Languages",
@@ -104,6 +105,8 @@
 		"email": "945947732@qq.com"
 	},
 	"devDependencies": {
+		"husky": "^8.0.3",
+		"lint-staged": "^15.0.1",
 		"markdownlint-cli": "^0.37.0",
 		"prettier": "^3.0.3"
 	}

@@ -1,6 +1,7 @@
 .vscode/**
 .vscode-test/**
 .github/**
+.husky/**
 examples/**
 docs/**
 vsc-extension-quickstart.md
@@ -11,3 +12,4 @@ vsc-extension-quickstart.md
 .prettierignore
 .markdownlint.yml
 .markdownlintignore
+.lintstagedrc
