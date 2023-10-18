@@ -13,3 +13,4 @@ vsc-extension-quickstart.md
 .markdownlint.yml
 .markdownlintignore
 .lintstagedrc
+.gitattributes
