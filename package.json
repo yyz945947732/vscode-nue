@@ -96,6 +96,10 @@
       }
     ]
   },
+  "lint-staged": {
+    "*.md": "markdownlint",
+    "*.{js,json}": "prettier --cache --write"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/yyz945947732/vscode-nue"
