@@ -8,3 +8,6 @@ vsc-extension-quickstart.md
 .gitignore
 .editorconfig
 .prettierrc
+.prettierignore
+.markdownlint.yml
+.markdownlintignore

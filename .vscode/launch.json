@@ -5,10 +5,7 @@
 			"name": "Extension",
 			"type": "extensionHost",
 			"request": "launch",
-			"args": [
-				"${workspaceFolder}/examples",
-				"--extensionDevelopmentPath=${workspaceFolder}"
-			]
+			"args": ["${workspaceFolder}/examples", "--extensionDevelopmentPath=${workspaceFolder}"]
 		}
 	]
 }
