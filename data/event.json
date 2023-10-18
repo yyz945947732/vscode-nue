@@ -1,179 +1,179 @@
 {
-	"version": 1.1,
-	"globalAttributes": [
-		{
-			"name": "@abort"
-		},
-		{
-			"name": "@blur"
-		},
-		{
-			"name": "@canplay"
-		},
-		{
-			"name": "@canplaythrough"
-		},
-		{
-			"name": "@change"
-		},
-		{
-			"name": "@click"
-		},
-		{
-			"name": "@contextmenu"
-		},
-		{
-			"name": "@dblclick"
-		},
-		{
-			"name": "@drag"
-		},
-		{
-			"name": "@dragend"
-		},
-		{
-			"name": "@dragenter"
-		},
-		{
-			"name": "@dragleave"
-		},
-		{
-			"name": "@dragover"
-		},
-		{
-			"name": "@dragstart"
-		},
-		{
-			"name": "@drop"
-		},
-		{
-			"name": "@durationchange"
-		},
-		{
-			"name": "@emptied"
-		},
-		{
-			"name": "@ended"
-		},
-		{
-			"name": "@error"
-		},
-		{
-			"name": "@focus"
-		},
-		{
-			"name": "@formchange"
-		},
-		{
-			"name": "@forminput"
-		},
-		{
-			"name": "@input"
-		},
-		{
-			"name": "@invalid"
-		},
-		{
-			"name": "@keydown"
-		},
-		{
-			"name": "@keypress"
-		},
-		{
-			"name": "@keyup"
-		},
-		{
-			"name": "@load"
-		},
-		{
-			"name": "@loadeddata"
-		},
-		{
-			"name": "@loadedmetadata"
-		},
-		{
-			"name": "@loadstart"
-		},
-		{
-			"name": "@mousedown"
-		},
-		{
-			"name": "@mousemove"
-		},
-		{
-			"name": "@mouseout"
-		},
-		{
-			"name": "@mouseover"
-		},
-		{
-			"name": "@mouseenter"
-		},
-		{
-			"name": "@mouseleave"
-		},
-		{
-			"name": "@mouseup"
-		},
-		{
-			"name": "@mousewheel"
-		},
-		{
-			"name": "@pause"
-		},
-		{
-			"name": "@play"
-		},
-		{
-			"name": "@playing"
-		},
-		{
-			"name": "@progress"
-		},
-		{
-			"name": "@ratechange"
-		},
-		{
-			"name": "@reset"
-		},
-		{
-			"name": "@resize"
-		},
-		{
-			"name": "@readystatechange"
-		},
-		{
-			"name": "@scroll"
-		},
-		{
-			"name": "@seeked"
-		},
-		{
-			"name": "@seeking"
-		},
-		{
-			"name": "@select"
-		},
-		{
-			"name": "@show"
-		},
-		{
-			"name": "@stalled"
-		},
-		{
-			"name": "@submit"
-		},
-		{
-			"name": "@suspend"
-		},
-		{
-			"name": "@timeupdate"
-		},
-		{
-			"name": "@volumechange"
-		},
-		{
-			"name": "@waiting"
-		}
-	]
+  "version": 1.1,
+  "globalAttributes": [
+    {
+      "name": "@abort"
+    },
+    {
+      "name": "@blur"
+    },
+    {
+      "name": "@canplay"
+    },
+    {
+      "name": "@canplaythrough"
+    },
+    {
+      "name": "@change"
+    },
+    {
+      "name": "@click"
+    },
+    {
+      "name": "@contextmenu"
+    },
+    {
+      "name": "@dblclick"
+    },
+    {
+      "name": "@drag"
+    },
+    {
+      "name": "@dragend"
+    },
+    {
+      "name": "@dragenter"
+    },
+    {
+      "name": "@dragleave"
+    },
+    {
+      "name": "@dragover"
+    },
+    {
+      "name": "@dragstart"
+    },
+    {
+      "name": "@drop"
+    },
+    {
+      "name": "@durationchange"
+    },
+    {
+      "name": "@emptied"
+    },
+    {
+      "name": "@ended"
+    },
+    {
+      "name": "@error"
+    },
+    {
+      "name": "@focus"
+    },
+    {
+      "name": "@formchange"
+    },
+    {
+      "name": "@forminput"
+    },
+    {
+      "name": "@input"
+    },
+    {
+      "name": "@invalid"
+    },
+    {
+      "name": "@keydown"
+    },
+    {
+      "name": "@keypress"
+    },
+    {
+      "name": "@keyup"
+    },
+    {
+      "name": "@load"
+    },
+    {
+      "name": "@loadeddata"
+    },
+    {
+      "name": "@loadedmetadata"
+    },
+    {
+      "name": "@loadstart"
+    },
+    {
+      "name": "@mousedown"
+    },
+    {
+      "name": "@mousemove"
+    },
+    {
+      "name": "@mouseout"
+    },
+    {
+      "name": "@mouseover"
+    },
+    {
+      "name": "@mouseenter"
+    },
+    {
+      "name": "@mouseleave"
+    },
+    {
+      "name": "@mouseup"
+    },
+    {
+      "name": "@mousewheel"
+    },
+    {
+      "name": "@pause"
+    },
+    {
+      "name": "@play"
+    },
+    {
+      "name": "@playing"
+    },
+    {
+      "name": "@progress"
+    },
+    {
+      "name": "@ratechange"
+    },
+    {
+      "name": "@reset"
+    },
+    {
+      "name": "@resize"
+    },
+    {
+      "name": "@readystatechange"
+    },
+    {
+      "name": "@scroll"
+    },
+    {
+      "name": "@seeked"
+    },
+    {
+      "name": "@seeking"
+    },
+    {
+      "name": "@select"
+    },
+    {
+      "name": "@show"
+    },
+    {
+      "name": "@stalled"
+    },
+    {
+      "name": "@submit"
+    },
+    {
+      "name": "@suspend"
+    },
+    {
+      "name": "@timeupdate"
+    },
+    {
+      "name": "@volumechange"
+    },
+    {
+      "name": "@waiting"
+    }
+  ]
 }

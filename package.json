@@ -1,115 +1,115 @@
 {
-	"name": "nue",
-	"displayName": "Nue Language Support",
-	"description": "Nue Language Support for Visual Studio Code.",
-	"version": "0.0.7",
-	"license": "MIT",
-	"publisher": "yaoyuanzhang",
-	"icon": "asset/logo.png",
-	"main": "./src/extension.js",
-	"engines": {
-		"vscode": "^1.70.1"
-	},
-	"author": "yyz945947732 <945947732@qq.com>",
-	"scripts": {
-		"publish": "npx vsce publish --githubBranch master",
-		"format": "prettier --write '**/*.{js,json,md}'",
-		"lint": "prettier --check '**/*.{js,json,md}'",
-		"lint:doc": "markdownlint \"**/*.md\"",
-		"prepare": "husky install"
-	},
-	"categories": [
-		"Programming Languages",
-		"Snippets"
-	],
-	"keywords": [
-		"nue",
-		"nuejs",
-		"snippets",
-		"syntax highlighting"
-	],
-	"activationEvents": [
-		"onLanguage:nue"
-	],
-	"contributes": {
-		"languages": [
-			{
-				"id": "nue",
-				"aliases": [
-					"Nue",
-					"nue",
-					"nuejs"
-				],
-				"extensions": [
-					".nue"
-				],
-				"icon": {
-					"light": "./asset/icon.png",
-					"dark": "./asset/icon.png"
-				},
-				"configuration": "./language-configuration.json"
-			}
-		],
-		"grammars": [
-			{
-				"language": "nue",
-				"scopeName": "text.html.nue",
-				"path": "./syntaxes/nue.tmLanguage.json"
-			},
-			{
-				"scopeName": "markdown.nue.codeblock",
-				"path": "./syntaxes/markdown.nue.json",
-				"injectTo": [
-					"text.html.markdown"
-				],
-				"embeddedLanguages": {
-					"meta.embedded.block.nue": "nue"
-				}
-			}
-		],
-		"snippets": [
-			{
-				"language": "nue",
-				"path": "./snippets/snippets.json"
-			}
-		],
-		"html": {
-			"customData": [
-				"./data/attributes.json",
-				"./data/event.json"
-			]
-		},
-		"htmlLanguageParticipants": [
-			{
-				"languageId": "nue",
-				"autoInsert": true
-			}
-		],
-		"configurationDefaults": {
-			"emmet.includeLanguages": {
-				"nue": "html"
-			}
-		},
-		"breakpoints": [
-			{
-				"language": "nue"
-			}
-		]
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/yyz945947732/vscode-nue"
-	},
-	"bugs": {
-		"url": "https://github.com/yyz945947732/vscode-nue/issues",
-		"email": "945947732@qq.com"
-	},
-	"devDependencies": {
-		"@commitlint/cli": "^17.8.0",
-		"@commitlint/config-conventional": "^17.8.0",
-		"husky": "^8.0.3",
-		"lint-staged": "^15.0.1",
-		"markdownlint-cli": "^0.37.0",
-		"prettier": "^3.0.3"
-	}
+  "name": "nue",
+  "displayName": "Nue Language Support",
+  "description": "Nue Language Support for Visual Studio Code.",
+  "version": "0.0.7",
+  "license": "MIT",
+  "publisher": "yaoyuanzhang",
+  "icon": "asset/logo.png",
+  "main": "./src/extension.js",
+  "engines": {
+    "vscode": "^1.70.1"
+  },
+  "author": "yyz945947732 <945947732@qq.com>",
+  "scripts": {
+    "publish": "npx vsce publish --githubBranch master",
+    "format": "prettier --write '**/*.{js,json,md}'",
+    "lint": "prettier --check '**/*.{js,json,md}'",
+    "lint:doc": "markdownlint \"**/*.md\"",
+    "prepare": "husky install"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "keywords": [
+    "nue",
+    "nuejs",
+    "snippets",
+    "syntax highlighting"
+  ],
+  "activationEvents": [
+    "onLanguage:nue"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "nue",
+        "aliases": [
+          "Nue",
+          "nue",
+          "nuejs"
+        ],
+        "extensions": [
+          ".nue"
+        ],
+        "icon": {
+          "light": "./asset/icon.png",
+          "dark": "./asset/icon.png"
+        },
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "nue",
+        "scopeName": "text.html.nue",
+        "path": "./syntaxes/nue.tmLanguage.json"
+      },
+      {
+        "scopeName": "markdown.nue.codeblock",
+        "path": "./syntaxes/markdown.nue.json",
+        "injectTo": [
+          "text.html.markdown"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.nue": "nue"
+        }
+      }
+    ],
+    "snippets": [
+      {
+        "language": "nue",
+        "path": "./snippets/snippets.json"
+      }
+    ],
+    "html": {
+      "customData": [
+        "./data/attributes.json",
+        "./data/event.json"
+      ]
+    },
+    "htmlLanguageParticipants": [
+      {
+        "languageId": "nue",
+        "autoInsert": true
+      }
+    ],
+    "configurationDefaults": {
+      "emmet.includeLanguages": {
+        "nue": "html"
+      }
+    },
+    "breakpoints": [
+      {
+        "language": "nue"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yyz945947732/vscode-nue"
+  },
+  "bugs": {
+    "url": "https://github.com/yyz945947732/vscode-nue/issues",
+    "email": "945947732@qq.com"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.8.0",
+    "@commitlint/config-conventional": "^17.8.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.1",
+    "markdownlint-cli": "^0.37.0",
+    "prettier": "^3.0.3"
+  }
 }
