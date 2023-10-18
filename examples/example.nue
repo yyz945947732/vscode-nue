@@ -1,169 +1,168 @@
 <!-- Fractal generation -->
 <ul class="fractal">
-    <li :for="am in rows"><b :for="el in Array(am).fill(0)" /></li>
-    <script>rows = Array(20).fill(0).map((_, i) => i ? 3 * i : 1)</script>
+  <li :for="am in rows"><b :for="el in Array(am).fill(0)" /></li>
+  <script>rows = Array(20).fill(0).map((_, i) => i ? 3 * i : 1)</script>
 </ul>
 
 <!-- Multiple fractals -->
 <div @name="fractals" class="fractals">
-    <fractal class="first" />
-    <fractal class="second" />
-    <fractal class="third" />
+  <fractal class="first" />
+  <fractal class="second" />
+  <fractal class="third" />
 </div>
 
 <!-- Canvas painter -->
 <canvas @mousemove="mousemove">
-    <script>
-        last = [0, 0]
+  <script>
+    last = [0, 0]
 
-        mounted() {
-            const { root } = this
-            const ctx = this.ctx = root.getContext('2d')
-            root.width = 800; root.height = 600
-            ctx.fillStyle = 'white'
-            ctx.lineCap = 'round'
-            ctx.lineWidth = 20
-            this.recolor()
-            this.clear()
-        }
+    mounted() {
+      const { root } = this
+      const ctx = this.ctx = root.getContext('2d')
+      root.width = 800; root.height = 600
+      ctx.fillStyle = 'white'
+      ctx.lineCap = 'round'
+      ctx.lineWidth = 20
+      this.recolor()
+      this.clear()
+    }
 
-        // reset canvas in every five seconds
-        clear() {
-            this.ctx.fillRect(0, 0, this.root.width, this.root.height)
-            setTimeout(_ => this.clear(), 5000)
-        }
+    // reset canvas in every five seconds
+    clear() {
+      this.ctx.fillRect(0, 0, this.root.width, this.root.height)
+      setTimeout(_ => this.clear(), 5000)
+    }
 
-        // reset Nue brand color every second
-        recolor() {
-            const colors = ['00c2ff', 'e2e8f0', 'fb00e2', '000']
-            this.ctx.strokeStyle = `#${colors[Math.floor(Math.random() * 4)]}`
-            setTimeout(_ => this.recolor(), 1000)
-        }
+    // reset Nue brand color every second
+    recolor() {
+      const colors = ['00c2ff', 'e2e8f0', 'fb00e2', '000']
+      this.ctx.strokeStyle = `#${colors[Math.floor(Math.random() * 4)]}`
+      setTimeout(_ => this.recolor(), 1000)
+    }
 
-        // draw the line
-        mousemove(e) {
-            const { ctx, last } = this
-            const to = [e.pageX - e.target.offsetLeft, e.pageY - e.target.offsetTop]
-            ctx.beginPath(); ctx.moveTo(...last); ctx.lineTo(...to); ctx.stroke()
-            this.last = to
-        }
-    </script>
+    // draw the line
+    mousemove(e) {
+      const { ctx, last } = this
+      const to = [e.pageX - e.target.offsetLeft, e.pageY - e.target.offsetTop]
+      ctx.beginPath(); ctx.moveTo(...last); ctx.lineTo(...to); ctx.stroke()
+      this.last = to
+    }
+  </script>
 
 </canvas>
 
 <!-- Server communication -->
 <figure @name="fetch-fruits">
-    <img :for="img in images" :src="/demo/img/{img}.jpg">
-    <button @click="fetchFruits">Fetch more fruits</button>
+  <img :for="img in images" :src="/demo/img/{img}.jpg">
+  <button @click="fetchFruits">Fetch more fruits</button>
 
-    <script>
-        images = ['lemons', 'peas']
+  <script>
+    images = ['lemons', 'peas']
 
     async fetchFruits() {
-            const req = await fetch('fruits.json')
-            const fruits = await req.json()
-            fruits.forEach(this.images.push)
-        }
-    </script>
+      const req = await fetch('fruits.json')
+      const fruits = await req.json()
+      fruits.forEach(this.images.push)
+    }
+  </script>
 </figure>
 
 <!-- Hello world -->
 <h3>
-    Hello { name }!
-    <script>name = 'world'</script>
+  Hello { name }!
+  <script>name = 'world'</script>
 </h3>
 
 <!-- Counter -->
 <button @click="count++">
-    Clicked { count } { count == 1 ? 'time' : 'times' }
-    <script>count = 0</script>
+  Clicked { count } { count == 1 ? 'time' : 'times' }
+  <script>count = 0</script>
 </button>
 
 <!-- Conditional rendering -->
 <button @click="count++">
-    <p :if="!count">No clicks yet</p>
-    <p :else-if="count == 1">First click!</p>
-    <p :else-if="count == 2">Nice. Another one.</p>
-    <p :else>Clicks: { count }</p>
-    <script>count = 0</script>
+  <p :if="!count">No clicks yet</p>
+  <p :else-if="count == 1">First click!</p>
+  <p :else-if="count == 2">Nice. Another one.</p>
+  <p :else>Clicks: { count }</p>
+  <script>count = 0</script>
 </button>
 
 <!-- Mouse tracking -->
 <div @mousemove="track" style="height: { h }em">
-    Position: { x } x { y }
+  Position: { x } x { y }
 
-    <script>
-        h = 10
-        x = 0
-        y = 0
+  <script>
+    h = 10
+    x = 0
+    y = 0
 
-        track(event) {
-            this.x = event.clientX
-            this.y = event.clientY
-        }
-    </script>
+    track(event) {
+      this.x = event.clientX
+      this.y = event.clientY
+    }
+  </script>
 </div>
 
 <!-- Simple loop -->
 <figure>
-    <img :for="img in images" :src="/demo/img/{img}.jpg">
-    <script>
-        images = ['popcorn', 'peas', 'tomatoes']
-    </script>
+  <img :for="img in images" :src="/demo/img/{img}.jpg">
+  <script>
+    images = ['popcorn', 'peas', 'tomatoes']
+  </script>
 </figure>
 
 <!-- Reactive loop -->
 <div>
+  <p>
+    <button @click="addFruit">Add</button>
+    <button @click="images.pop()" :disabled="!images[4]">Remove</button>
+  </p>
 
-    <p>
-        <button @click="addFruit">Add</button>
-        <button @click="images.pop()" :disabled="!images[4]">Remove</button>
-    </p>
+  <img :for="img in images" :src="/demo/img/{img}.jpg">
 
-    <img :for="img in images" :src="/demo/img/{img}.jpg">
+  <script>
+    images = ['popcorn', 'peas', 'lemons', 'tomatoes']
 
-    <script>
-        images = ['popcorn', 'peas', 'lemons', 'tomatoes']
-
-        addFruit() {
-            const img = this.images[Math.floor(Math.random() * 4)]
-            this.images.push(img)
-        }
-    </script>
+    addFruit() {
+      const img = this.images[Math.floor(Math.random() * 4)]
+      this.images.push(img)
+    }
+  </script>
 </div>
 
 <!-- Inputs -->
 <form @name="input-demo">
-    <input type="number" :value="a" @change="a = $event.target.value">
-    <input type="number" :value="b" @change="b = $event.target.value">
+  <input type="number" :value="a" @change="a = $event.target.value">
+  <input type="number" :value="b" @change="b = $event.target.value">
 
-    <p>{a} + {b} = {1 * a + 1 * b}</p>
+  <p>{a} + {b} = {1 * a + 1 * b}</p>
 
-    <script>
-        a = 1
-        b = 2
-    </script>
+  <script>
+    a = 1
+    b = 2
+  </script>
 </form>
 
 <!-- Child properties -->
 <h3>
-    { a } + { b } =
-    <sum :a="a" :b="b" />
-    <script>
-        // instance variables
-        a = 10
-        b = 100
-    </script>
+  { a } + { b } =
+  <sum :a="a" :b="b" />
+  <script>
+    // instance variables
+    a = 10
+    b = 100
+  </script>
 </h3>
 
 <span @name="sum">
-    { a + b }
+  { a + b }
 </span>
 
 <!-- HTML expressions -->
 <button>
-    {{ label }}
-    <script>
-        label = 'Hello, <u>Underlined</u>'
-    </script>
+  {{ label }}
+  <script>
+    label = 'Hello, <u>Underlined</u>'
+  </script>
 </button>

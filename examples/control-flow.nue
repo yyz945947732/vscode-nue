@@ -3,10 +3,10 @@
 
 <!-- :else -->
 <div>
-    <h1 :if="cool">I'm cool!</h1>
-    <h1 :else>I'm ordinary</h1>
+  <h1 :if="cool">I'm cool!</h1>
+  <h1 :else>I'm ordinary</h1>
 
-    <button @click="cool = !cool">Toggle</button>
+  <button @click="cool = !cool">Toggle</button>
 </div>
 
 <!-- :else-if -->
@@ -20,68 +20,68 @@
 
 <!-- Array loops -->
 <ul>
-    <li :for="item in items">
-        { item.lang } = { item.text }
-    </li>
+  <li :for="item in items">
+    { item.lang } = { item.text }
+  </li>
 
-    <script>
-        items = [
-            { lang: 'en', text: 'Hello' },
-            { lang: 'es', text: 'Hola' },
-            { lang: 'it', text: 'Ciao' },
-            { lang: 'fi', text: 'Moi' }
-        ]
-    </script>
+  <script>
+    items = [
+      { lang: 'en', text: 'Hello' },
+      { lang: 'es', text: 'Hola' },
+      { lang: 'it', text: 'Ciao' },
+      { lang: 'fi', text: 'Moi' }
+    ]
+  </script>
 </ul>
 
 <li :for="(item, index) in items">
-    { index }: { item.text }
+  { index }: { item.text }
 </li>
 
 <li :for="{ lang, text } in items">
-    { lang } = { text }
+  { lang } = { text }
 </li>
 
 <li :for="({ text }, index) in items">
-    { text } { index }
+  { text } { index }
 </li>
 
 <li :for="item in items">
-    <p :for="child in item.children">
-        { item.text } { child.text }
-    </p>
+  <p :for="child in item.children">
+    { item.text } { child.text }
+  </p>
 </li>
 
 <div :for="item of items"></div>
 
 <!-- Array loops -->
 <ul>
-    <li :for="[lang, text] in Object.entries(items)">
-        { lang } = { text }
-    </li>
-    <script>
-        items = {
-            en: 'Hello',
-            es: 'Hola',
-            it: 'Ciao',
-            fi: 'Moi'
-        }
-    </script>
+  <li :for="[lang, text] in Object.entries(items)">
+    { lang } = { text }
+  </li>
+  <script>
+    items = {
+      en: 'Hello',
+      es: 'Hola',
+      it: 'Ciao',
+      fi: 'Moi'
+    }
+  </script>
 </ul>
 
 <ul>
-    <li :for="[lang, text, index] in Object.entries(items)">
-        { index } / { lang } = { text }
-    </li>
+  <li :for="[lang, text, index] in Object.entries(items)">
+    { index } / { lang } = { text }
+  </li>
 </ul>
 
 <!-- Conditional loops -->
 <li :for="todo in todos" :if="todos">
-    {{ todo.name }}
+  {{ todo.name }}
 </li>
 
 <li :for="todo in todos" :hidden="!todo.is_complete">
-    {{ todo.name }}
+  {{ todo.name }}
 </li>
 
 <!-- Component loops -->
@@ -94,32 +94,32 @@
 <!-- Example -->
 <article @name="animation-demo" class="user-list">
 
-    <button @click="addUser" :disabled="users[5]">
-        Add user
-    </button>
+  <button @click="addUser" :disabled="users[5]">
+    Add user
+  </button>
 
-    <section class="user-list">
-        <media-object :for="user in users" :bind="user" />
-    </section>
+  <section class="user-list">
+    <media-object :for="user in users" :bind="user" />
+  </section>
 
-    <script>
+  <script>
 
-        // fill list with the first three available items
-        constructor({ items }) {
-            this.users = items.slice(0, 3)
-        }
+    // fill list with the first three available items
+    constructor({ items }) {
+      this.users = items.slice(0, 3)
+    }
 
-        // insert a new user from the available items
-        addUser() {
-            const { items, users } = this
-            const user = items[users.length]
-            if (user) users.push(user)
-        }
+    // insert a new user from the available items
+    addUser() {
+      const { items, users } = this
+      const user = items[users.length]
+      if (user) users.push(user)
+    }
 
-        // add a CSS transition class to a newly added dom nodes
-        oninsert(node) {
-            setTimeout(() => node.classList.add('fade-in'), 1)
-        }
-    </script>
+    // add a CSS transition class to a newly added dom nodes
+    oninsert(node) {
+      setTimeout(() => node.classList.add('fade-in'), 1)
+    }
+  </script>
 
 </article>

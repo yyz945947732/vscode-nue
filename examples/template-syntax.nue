@@ -13,13 +13,13 @@
 
 <!-- Function calls -->
 <time :datetime="date.toISOString()">
-    { prettyTime(date) }
+  { prettyTime(date) }
 
-    <script>
-        prettyTime(date) {
-            return MY_CUTE_FORMAT.format(date)
-        }
-    </script>
+  <script>
+    prettyTime(date) {
+      return MY_CUTE_FORMAT.format(date)
+    }
+  </script>
 </time>
 
 <!-- Attributes -->
@@ -30,7 +30,7 @@
 <media-list :items="items" />
 
 <div @name="media">
-    <h3>{ title }</h3>
+  <h3>{ title }</h3>
 </div>
 
 <!-- Interpolation -->
@@ -66,25 +66,25 @@
 
 <!-- Rendering attributes with :attr -->
 <p :attr="data">
-    <script>
-        data = {
-            title: 'My title',
-            alt: 'My alt',
-        }
-    </script>
+  <script>
+    data = {
+      title: 'My title',
+      alt: 'My alt',
+    }
+  </script>
 </p>
 
 <p title="My title" alt="My alt"></p>
 
 <!-- $attrs property -->
 <label @name="field">
-    <h5>{ title }</h5>
-    <input :attr="$attrs">
+  <h5>{ title }</h5>
+  <input :attr="$attrs">
 </label>
 
 <field title="Email" type="email" placeholder="me@acme.org" required="true" />
 
 <label>
-    <h5>Email</h5>
-    <input title="Email" type="email" placeholder="me@acme.org" required>
+  <h5>Email</h5>
+  <input title="Email" type="email" placeholder="me@acme.org" required>
 </label>

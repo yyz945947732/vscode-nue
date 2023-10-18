@@ -3,49 +3,49 @@
 
 <!-- Method handlers -->
 <dialog>
-    <button @click="close">Close</button>
+  <button @click="close">Close</button>
 
-    <script>
-        close() {
-            this.root.close()
-            location.hash = ''
-        }
-    </script>
+  <script>
+    close() {
+      this.root.close()
+      location.hash = ''
+    }
+  </script>
 </dialog>
 
 <!-- Method calls -->
 <div>
-    <button @click="say('yo!')">Say yo!</button>
+  <button @click="say('yo!')">Say yo!</button>
 
-    <script>
-        say(msg) {
-            console.log(msg)
-        }
-    </script>
+  <script>
+    say(msg) {
+      console.log(msg)
+    }
+  </script>
 </div>
 
 <!-- Event argument -->
 <div>
-    <button @click="first">First</button>
-    <button @click="second('Hello')">World</button>
-    <button @click="third('Hello', $event, 'World')">Nue</button>
+  <button @click="first">First</button>
+  <button @click="second('Hello')">World</button>
+  <button @click="third('Hello', $event, 'World')">Nue</button>
 
-    <script>
-        // prints "First"
-        first($event) {
-            console.info($event.target.textContent)
-        }
+  <script>
+    // prints "First"
+    first($event) {
+      console.info($event.target.textContent)
+    }
 
-        // prints "Hello World"
-        second(hey, $event) {
-            console.info(hey, $event.target.textContent)
-        }
+    // prints "Hello World"
+    second(hey, $event) {
+      console.info(hey, $event.target.textContent)
+    }
 
-        // prints "Hello Nue World"
-        third(hey, $event, who) {
-            console.info(hey, $event.target.textContent, who)
-        }
-    </script>
+    // prints "Hello Nue World"
+    third(hey, $event, who) {
+      console.info(hey, $event.target.textContent, who)
+    }
+  </script>
 </div>
 
 <!-- Event modifiers -->
