@@ -45,7 +45,7 @@
     },
     "nue-js-keyword": {
       "name": "meta.keyword",
-      "match": "(function|class)",
+      "match": "( function| class| {)",
       "patterns": [
         {
           "include": "text.html"
