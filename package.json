@@ -100,11 +100,6 @@
     "*.md": "markdownlint",
     "*.{js,json}": "prettier --cache --write"
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/yyz945947732/vscode-nue"
@@ -114,8 +109,6 @@
     "email": "945947732@qq.com"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.8.0",
-    "@commitlint/config-conventional": "^17.8.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.1",
     "markdownlint-cli": "^0.37.0",
