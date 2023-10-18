@@ -1,0 +1,4 @@
+{
+	"*.md": "markdownlint",
+	"*.{js,json}": "prettier --cache --write"
+}
