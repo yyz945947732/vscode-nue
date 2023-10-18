@@ -100,6 +100,11 @@
     "*.md": "markdownlint",
     "*.{js,json}": "prettier --cache --write"
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/yyz945947732/vscode-nue"
