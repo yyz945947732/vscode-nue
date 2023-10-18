@@ -1,4 +1,10 @@
 .vscode/**
 .vscode-test/**
-.gitignore
+.github/**
+examples/**
+docs/**
 vsc-extension-quickstart.md
+.npmrc
+.gitignore
+.editorconfig
+.prettierrc

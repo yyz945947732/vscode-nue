@@ -1,1 +1,26 @@
+# VSCode
 *vsix
+
+# lockfiles are ignored in npm modules
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Yarn
+.yarn-integrity
+yarn-debug.log*
+yarn-error.log*
+
+# File manager configs
+.directory
+Thumbs.db
+*.DS_Store
+
+# Logs
+logs/
+*.log
+
+# NPM
+.npm/
+node_modules/
+npm-debug.log*

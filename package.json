@@ -12,7 +12,9 @@
 	},
 	"author": "yyz945947732 <945947732@qq.com>",
 	"scripts": {
-		"publish": "npx vsce publish --githubBranch master"
+		"publish": "npx vsce publish --githubBranch master",
+		"format": "prettier --write '**/*.{js,json,md}'",
+		"lint": "prettier --check '**/*.{js,json,md}'"
 	},
 	"categories": [
 		"Programming Languages",
@@ -99,5 +101,8 @@
 	"bugs": {
 		"url": "https://github.com/yyz945947732/vscode-nue/issues",
 		"email": "945947732@qq.com"
+	},
+	"devDependencies": {
+		"prettier": "^3.0.3"
 	}
 }
