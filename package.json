@@ -13,6 +13,7 @@
   "author": "yyz945947732 <945947732@qq.com>",
   "scripts": {
     "publish": "npx vsce publish --githubBranch master",
+    "package": "npx vsce package",
     "format": "prettier --write '**/*.{js,json,md}'",
     "lint": "prettier --check '**/*.{js,json,md}'",
     "lint:doc": "markdownlint \"**/*.md\"",
