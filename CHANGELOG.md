@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.8
+
+- Fixed highlight error when `function` or `class` in `{}`.
+
 ## 0.0.7
 
 - Add markdown support.
