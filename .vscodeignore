@@ -12,6 +12,5 @@ vsc-extension-quickstart.md
 .prettierignore
 .markdownlint.yml
 .markdownlintignore
-.lintstagedrc
 .gitattributes
 .commitlintrc.json
