@@ -79,7 +79,8 @@
           "name": "API Reference",
           "url": "https://nuejs.org/docs/nuejs/template-syntax.html#attr"
         }
-      ]
+      ],
+      "valueSet": "attrs"
     },
     {
       "name": "ref",
@@ -98,6 +99,23 @@
         {
           "name": "API Reference",
           "url": "https://nuejs.org/docs/nuejs/component-basics.html#defining-components"
+        }
+      ]
+    }
+  ],
+  "valueSets": [
+    {
+      "name": "attrs",
+      "values": [
+        {
+          "name": "$attrs",
+          "description": "All parent attributes are available via the `$attrs` property.",
+          "references": [
+            {
+              "name": "API Reference",
+              "url": "https://nuejs.org/docs/nuejs/template-syntax.html#attrs-property"
+            }
+          ]
         }
       ]
     }
