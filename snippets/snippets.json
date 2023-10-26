@@ -45,5 +45,10 @@
       "</${1:div}>"
     ],
     "description": "Rendering attributes with :attr"
+  },
+  "Nue Component": {
+    "prefix": "ncomp",
+    "body": ["<${1:div} @name=\"${2:comp}\">", "", "</${1:div}>"],
+    "description": "Nue Component"
   }
 }
