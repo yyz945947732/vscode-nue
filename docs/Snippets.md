@@ -1,5 +1,17 @@
 # Snippets
 
+**Snippets are found below.**
+
+→ Denotes the `TAB` key.
+
+| Snippet→     | Output            |
+| ----------  | -------------------|
+| [`nfor→`](#nfor) | Nue For Loop |
+| [`nif→`](#nif) | Nue If Statement  |
+| [`nscript→`](#nscript) | Nue Script with all lifecycle methods |
+| [`nattr→`](#nattr) | Rendering attributes with :attr |
+| [`ncomp→`](#ncomp) | Nue Component |
+
 ## `nfor`
 
 ```js
@@ -42,5 +54,13 @@
 
     }
   </script>
+</div>
+```
+
+## `ncomp`
+
+```html
+<div @name="comp">
+
 </div>
 ```
