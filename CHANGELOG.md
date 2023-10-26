@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.0.9
+
+- Add snippet for generates component code.
+- Support `$attr` value auto-completion for `:attr` attributes.
+- Fix incorrect comment behavior of js code.
+
 ## 0.0.8
 
 - Fixed highlight error when `function` or `class` in `{}`.
