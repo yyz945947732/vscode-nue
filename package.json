@@ -55,7 +55,15 @@
       {
         "language": "nue",
         "scopeName": "text.html.nue",
-        "path": "./syntaxes/nue.tmLanguage.json"
+        "path": "./syntaxes/nue.tmLanguage.json",
+        "embeddedLanguages": {
+          "text.html.basic": "html",
+          "source.css": "css",
+          "source.css.scss": "scss",
+          "source.css.less": "less",
+          "source.js": "javascript",
+          "source.ts": "typescript"
+        }
       },
       {
         "scopeName": "markdown.nue.codeblock",
