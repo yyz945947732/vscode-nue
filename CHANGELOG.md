@@ -1,9 +1,5 @@
 # Change Log
 
-## 0.0.10
-
-- Remove icon.
-
 ## 0.0.9
 
 - Add snippet for generates component code.
