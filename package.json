@@ -44,10 +44,6 @@
         "extensions": [
           ".nue"
         ],
-        "icon": {
-          "light": "./asset/icon.png",
-          "dark": "./asset/icon.png"
-        },
         "configuration": "./language-configuration.json"
       }
     ],
