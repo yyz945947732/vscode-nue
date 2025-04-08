@@ -2,7 +2,7 @@
   "name": "nue",
   "displayName": "Nue Language Support",
   "description": "Nue Language Support for Visual Studio Code.",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "license": "MIT",
   "publisher": "yaoyuanzhang",
   "icon": "asset/logo.png",
